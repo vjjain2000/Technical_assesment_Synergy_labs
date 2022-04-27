@@ -1,3 +1,6 @@
+package Synergy_labs_technical_assesment;
+
+
 public class Combination_of_characters {
 
 	public static void main(String[] args) {
