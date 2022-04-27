@@ -1,0 +1,24 @@
+package Synergy_labs_technical_assesment;
+
+public class Integer_to_Roman_expression {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Integer_to_RomanExpression(26);
+	}
+	public static void Integer_to_RomanExpression(int num) {
+		int[]number= {500,100,50,10,9,8,7,6,5,4,3,2,1};
+		String[] romanvalues = {"D","C","L","X","IX","VIII","VII","VI","V","IV","III","II","I"};
+		StringBuilder roman = new StringBuilder();
+		for(int i=0;i<number.length;i++) {
+			while(num>=number[i]) {
+				num=num-number[i];
+				roman.append(romanvalues[i]);
+			}
+			
+		}
+		System.out.println(roman);
+		
+	
+}
+}
